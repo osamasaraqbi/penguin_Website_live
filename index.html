@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Penguin AI Studio designs Apple Vision Pro apps, visionOS interfaces, immersive training simulators, AI dashboards, spatial computing prototypes, and investor-ready Vision Pro demo roadmaps from Amman, Jordan." />
+  <meta name="keywords" content="Apple Vision Pro app studio, visionOS app development, spatial computing studio, Apple Vision Pro simulator, immersive training apps, spatial UI design, AI dashboards, Vision Pro prototype, spatial product roadmap, immersive medical training simulator, Amman Jordan software studio" />
+  <meta property="og:title" content="Penguin AI Studio — Apple Vision Pro & Spatial Computing Studio" />
+  <meta property="og:description" content="Premium visionOS app design, spatial computing prototypes, immersive simulators, and AI-powered product experiences." />
+  <meta property="og:image" content="assets/hero.webp" />
+  <meta name="theme-color" content="#01030a" />
+  <title>Penguin AI Studio — Apple Vision Pro & Spatial Computing Studio</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Penguin AI Studio",
+    "url": "https://penguinstudio.app",
+    "description": "Apple Vision Pro app studio for visionOS app development, immersive training simulators, AI dashboards, and spatial computing prototypes.",
+    "areaServed": "Global",
+    "address": { "@type": "PostalAddress", "streetAddress": "King Hussein Business Park, Amman", "addressLocality": "Amman", "addressCountry": "JO" },
+    "sameAs": [
+      "https://www.instagram.com/penguin.ai.studio/",
+      "https://www.facebook.com/profile.php?id=61590183740058",
+      "https://www.linkedin.com/company/penguin-ai-studio",
+      "https://www.youtube.com/@PenguinAIStudio"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Kufi+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    :root{
+      --bg:#01030a; --bg2:#040a14; --panel:#07111f; --panel2:#0b1b31;
+      --text:#f8fbff; --muted:rgba(248,251,255,.73); --muted2:rgba(248,251,255,.50);
+      --line:rgba(255,255,255,.13); --blue:#7fd1ff; --blue2:#3d8cff; --cyan:#83f7ff;
+      --gold:#ffd875; --green:#77efc5; --violet:#a895ff; --pink:#ff9adb;
+      --shadow:0 36px 120px rgba(0,0,0,.48); --radius:34px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:104px;background:var(--bg)}
+    body{font-family:Inter,'Noto Kufi Arabic',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;z-index:-3;background:
+      radial-gradient(circle at 77% -8%,rgba(127,209,255,.30),transparent 28%),
+      radial-gradient(circle at 10% 18%,rgba(168,149,255,.18),transparent 28%),
+      radial-gradient(circle at 9% 58%,rgba(255,216,117,.10),transparent 28%),
+      radial-gradient(circle at 86% 83%,rgba(119,239,197,.10),transparent 30%),
+      linear-gradient(180deg,#01030a 0%,#050a16 44%,#01030a 100%)}
+    body:after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:
+      linear-gradient(rgba(131,247,255,.045) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(131,247,255,.045) 1px,transparent 1px),
+      radial-gradient(circle at 50% 0%,rgba(255,255,255,.045),transparent 35%);
+      background-size:72px 72px,72px 72px,100% 100%;mask-image:radial-gradient(circle at center,black 0%,rgba(0,0,0,.86) 42%,transparent 88%);opacity:.82}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .container{width:min(1240px,calc(100% - 52px));margin:0 auto}
+    .glass{background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.028)),radial-gradient(circle at 12% 0%,rgba(131,247,255,.085),transparent 35%);border:1px solid rgba(255,255,255,.14);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.075);backdrop-filter:blur(28px) saturate(1.18)}
+    .glass:hover{border-color:rgba(131,247,255,.30);box-shadow:0 42px 130px rgba(0,0,0,.50),0 0 0 1px rgba(127,209,255,.05) inset}
+    .section{position:relative;padding:112px 0}.section:before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(1120px,calc(100% - 88px));height:1px;background:linear-gradient(90deg,transparent,rgba(131,247,255,.24),rgba(255,216,117,.14),transparent)}
+    .section-head{margin-bottom:34px}.section-title{font-size:clamp(34px,4.4vw,62px);line-height:1.04;letter-spacing:-.066em;font-weight:350;max-width:900px;color:#faffff;text-wrap:balance;text-shadow:0 24px 76px rgba(0,0,0,.35)}
+    .section-title strong,.hero h1 strong{font-weight:930;background:linear-gradient(135deg,#fff 0%,#dff8ff 34%,var(--cyan) 62%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+    .section-lead,.hero p{max-width:790px;color:rgba(248,251,255,.75);font-size:17px;margin-top:16px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;background:rgba(131,247,255,.058);border:1px solid rgba(131,247,255,.15);border-radius:999px;padding:7px 12px;box-shadow:0 0 42px rgba(131,247,255,.08)}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px rgba(131,247,255,.86)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 20px;border-radius:999px;font-size:13px;font-weight:850;letter-spacing:.01em;transition:.25s ease;box-shadow:0 18px 68px rgba(0,0,0,.28)}.btn:hover{transform:translateY(-2px)}.btn-primary{color:#04101d;background:linear-gradient(135deg,var(--gold) 0%,#fff 42%,var(--cyan) 100%);box-shadow:0 20px 62px rgba(127,209,255,.23),0 10px 34px rgba(255,216,117,.12)}.btn-secondary{border:1px solid rgba(255,255,255,.16);background:linear-gradient(135deg,rgba(255,255,255,.085),rgba(255,255,255,.025));color:#f1fbff}
+    nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:100;width:min(1210px,calc(100% - 38px));height:68px;border-radius:999px;background:linear-gradient(135deg,rgba(2,6,13,.82),rgba(9,18,32,.62));border:1px solid rgba(255,255,255,.17);box-shadow:0 24px 84px rgba(0,0,0,.54),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(24px);display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 20px}
+    nav:before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(90deg,rgba(131,247,255,.45),rgba(255,255,255,.08),rgba(255,216,117,.35));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.78}
+    .nav-brand{display:flex;align-items:center;gap:12px}.nav-brand img{width:31px;height:42px;object-fit:contain;filter:drop-shadow(0 0 24px rgba(131,247,255,.42))}.nav-brand span{font-size:13px;font-weight:900;letter-spacing:.085em;text-transform:uppercase;color:#fff}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{font-size:12px;color:rgba(248,251,255,.70);font-weight:700;position:relative}.nav-links a:not(.nav-cta):after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0;transform:scaleX(.4);transition:.25s}.nav-links a:hover:after{opacity:1;transform:scaleX(1)}.nav-cta{color:#04101d!important;background:linear-gradient(135deg,var(--cyan),#fff 55%,var(--gold));border:1px solid rgba(255,255,255,.36);padding:8px 15px;border-radius:999px;box-shadow:0 10px 36px rgba(127,209,255,.20)}.menu-toggle{display:none;border:1px solid var(--line);background:rgba(255,255,255,.045);color:var(--text);border-radius:999px;padding:8px 14px;font-weight:800;font-size:12px}
+    .hero{min-height:100vh;padding:160px 0 86px;display:grid;align-items:center;position:relative}.hero:before{content:"";position:absolute;inset:102px clamp(18px,5vw,82px) 42px;border:1px solid rgba(255,255,255,.058);border-radius:52px;background:linear-gradient(180deg,rgba(255,255,255,.018),transparent 56%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1fr .92fr;gap:56px;align-items:center}.hero h1{font-size:clamp(48px,6.7vw,96px);line-height:.96;letter-spacing:-.088em;font-weight:320;margin-bottom:20px;text-shadow:0 32px 96px rgba(0,0,0,.48)}.hero .tagline{font-size:clamp(18px,1.7vw,24px);line-height:1.35;color:#fff;max-width:760px;margin:0 0 14px;font-weight:750;letter-spacing:-.035em}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.hero-badges,.trust-bar{display:flex;flex-wrap:wrap;gap:10px}.badge,.trust-item{border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg,rgba(255,255,255,.078),rgba(255,255,255,.026));border-radius:999px;padding:8px 13px;color:rgba(248,251,255,.74);font-size:12px;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.045)}.trust-bar{margin-top:18px}.trust-item{border-color:rgba(131,247,255,.18);background:rgba(131,247,255,.045)}
+    .hero-visual{border-radius:46px;overflow:hidden;border:1px solid rgba(255,255,255,.19);position:relative;background:#09111f;transform:perspective(1200px) rotateY(-3deg) rotateX(1.5deg);box-shadow:0 52px 160px rgba(0,0,0,.55),0 0 90px rgba(127,209,255,.09)}.hero-visual:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 25% 18%,rgba(131,247,255,.19),transparent 30%),radial-gradient(circle at 78% 80%,rgba(255,216,117,.13),transparent 32%);pointer-events:none}.hero-visual .bg{width:100%;height:620px;object-fit:cover;opacity:.92;filter:saturate(1.10) contrast(1.04)}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,16,.02),rgba(5,8,16,.55) 70%,rgba(5,8,16,.92))}.hero-card{position:absolute;z-index:2;left:38px;right:38px;bottom:34px;border-radius:26px;padding:24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:linear-gradient(135deg,rgba(3,9,17,.82),rgba(12,24,42,.66));border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(20px);box-shadow:0 20px 68px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.075)}.hero-card h2{font-size:22px;line-height:1.2;letter-spacing:-.035em;margin-bottom:8px}.hero-card p{font-size:14px}.hero-card img{width:62px;height:78px;object-fit:contain;filter:drop-shadow(0 0 22px rgba(131,247,255,.25))}
+    .metric-strip{margin-top:-44px;position:relative;z-index:5}.metric-grid{display:grid;grid-template-columns:1.15fr repeat(3,.95fr);gap:1px;border-radius:36px;overflow:hidden;border:1px solid rgba(255,255,255,.16);background:linear-gradient(90deg,rgba(131,247,255,.20),rgba(255,216,117,.12));box-shadow:var(--shadow);backdrop-filter:blur(24px)}.metric{padding:24px;background:linear-gradient(145deg,rgba(8,17,31,.94),rgba(3,7,13,.86))}.metric small{display:block;color:rgba(131,247,255,.74);font-size:10px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;margin-bottom:9px}.metric strong{display:block;font-size:20px;line-height:1.35;color:#fff}.metric p{color:var(--muted);font-size:12px;margin-top:6px}
+    .cards,.why-grid,.engagement-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.cards{grid-template-columns:repeat(4,minmax(0,1fr))}.card,.why-card,.step,.track-item,.deliverable,.engagement-card,.readiness-check,.faq-item,.usecase-card,.flow-step,.audience,.social{transition:transform .25s ease,border-color .25s ease,background .25s ease,box-shadow .25s ease}.card:hover,.why-card:hover,.step:hover,.track-item:hover,.deliverable:hover,.engagement-card:hover,.readiness-check:hover,.faq-item:hover,.usecase-card:hover,.flow-step:hover,.audience:hover,.social:hover{transform:translateY(-4px);border-color:rgba(131,247,255,.30);background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.036))}.card{border-radius:26px;padding:26px;position:relative;overflow:hidden}.card:before,.flow-step:before,.engagement-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 0 0,rgba(131,247,255,.17),transparent 42%),radial-gradient(circle at 100% 100%,rgba(255,216,117,.075),transparent 35%);pointer-events:none}.card h3,.card p,.card .num{position:relative}.card h3{font-size:20px;margin-bottom:10px}.card p,.engagement-card p{color:var(--muted);font-size:14px}.card .num,.deliverable small,.engagement-card small,.flow-step small{color:var(--gold);font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;display:block}.why-card{border-radius:30px;padding:32px}.why-card h3{font-size:24px;line-height:1.2;margin:16px 0 12px}.why-card p{color:var(--muted)}.why-icon{width:48px;height:48px;border-radius:17px;display:grid;place-items:center;color:#04101d;background:linear-gradient(135deg,var(--cyan),#fff 60%,var(--gold));font-weight:900;box-shadow:0 0 36px rgba(131,247,255,.20)}
+    .track-grid,.readiness-grid,.usecase-grid,.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}.track-hero,.demo-flow-panel,.readiness-card{border-radius:34px;padding:38px;background:linear-gradient(135deg,rgba(131,247,255,.115),rgba(168,149,255,.064),rgba(255,216,117,.052));border:1px solid rgba(131,247,255,.21)}.track-hero h3,.readiness-card h3,.usecase-main h3,.package-panel h3{font-size:clamp(26px,3vw,46px);line-height:1.08;letter-spacing:-.04em;margin-bottom:12px}.track-hero p,.readiness-card p,.usecase-main p,.package-panel p{color:var(--muted)}.track-list{display:grid;gap:12px}.track-item,.readiness-check,.faq-item,.usecase-card,.audience,.social{border-radius:22px;padding:20px;background:rgba(255,255,255,.045);border:1px solid var(--line)}.track-item b,.readiness-check b,.audience b,.social b{display:block;font-size:17px;margin-bottom:5px}.track-item span,.readiness-check span,.audience span,.social span{color:var(--muted);font-size:13px}
+    .process{display:grid;gap:14px}.step{display:grid;grid-template-columns:132px 1fr;gap:24px;border-radius:24px;padding:24px}.step-num,.project-no{color:var(--cyan);font-weight:900;letter-spacing:.15em}.step h3{font-size:22px;margin-bottom:6px}.step p{color:var(--muted)}
+    .build-path{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}.build-item{border-radius:24px;padding:24px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.13)}.build-item b{display:block;color:#fff;font-size:19px;margin-bottom:8px}.build-item span{color:var(--muted);font-size:13px}.negative-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}.negative-list{display:grid;gap:12px}.negative-list div{border-radius:20px;padding:18px;border:1px solid rgba(255,216,117,.18);background:rgba(255,216,117,.045);color:var(--muted)}.negative-list b{color:#fff;display:block;margin-bottom:4px}
+    .deliverables-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.deliverable{border-radius:24px;padding:22px;min-height:170px}.deliverable h3{font-size:18px;line-height:1.25;margin-bottom:9px}.deliverable p{color:var(--muted);font-size:13px}.package-panel,.cta-panel,.usecase-main{margin-top:20px;border-radius:34px;padding:34px;background:linear-gradient(135deg,rgba(255,216,117,.115),rgba(131,247,255,.082),rgba(255,255,255,.036));border:1px solid rgba(255,216,117,.22)}.package-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:center}.package-list,.engagement-list,.trust-strip,.demo-outcome{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.package-list span,.engagement-list span,.tags span,.brief-pill,.trust-pill,.demo-outcome span{background:rgba(255,255,255,.052);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:12px;color:var(--muted);font-size:13px}.engagement-card{border-radius:30px;padding:30px;position:relative;overflow:hidden}.engagement-card h3{position:relative;font-size:24px;line-height:1.2;margin-bottom:10px}.engagement-card small,.engagement-card p,.engagement-list{position:relative}.readiness-checks,.faq-grid,.usecase-cards,.social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.trust-strip{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:22px}.trust-pill b,.demo-outcome b{color:#fff;display:block;margin-bottom:4px}
+    .flow-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:24px}.flow-step{border-radius:24px;padding:22px;min-height:180px;position:relative;overflow:hidden}.flow-step h3{position:relative;font-size:19px;line-height:1.22;margin-bottom:8px}.flow-step p{position:relative;color:var(--muted);font-size:13px}.usecase-grid{grid-template-columns:.9fr 1.1fr}.usecase-main small{display:inline-flex;color:#04101d;background:linear-gradient(135deg,var(--gold),#fff2aa);border-radius:999px;padding:7px 12px;font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}.usecase-card b{display:block;font-size:18px;margin-bottom:7px}.usecase-card span{display:block;color:var(--muted);font-size:13px}.usecase-card.highlight{border-color:rgba(131,247,255,.25);background:rgba(131,247,255,.055)}
+    .projects-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.project{border-radius:36px;overflow:hidden;transition:.25s ease}.project:hover{transform:translateY(-4px);border-color:rgba(131,247,255,.30)}.project-media{position:relative;aspect-ratio:16/9;overflow:hidden;background:#08111f}.project-media img{width:100%;height:100%;object-fit:cover;transition:.45s ease}.project:hover .project-media img{transform:scale(1.035)}.project-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,16,.02),rgba(5,8,16,.20) 46%,rgba(1,3,10,.93))}.project-body{padding:22px;background:linear-gradient(180deg,rgba(255,255,255,.026),rgba(255,255,255,.006))}.project-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.project-type{color:#04101d;background:linear-gradient(135deg,var(--gold),#fff0aa);border-radius:999px;padding:5px 10px;font-size:10px;font-weight:900}.project h3{font-size:22px;line-height:1.2;margin-bottom:10px}.project p{color:var(--muted);font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.tags span{border-radius:999px;padding:5px 9px}.project.featured{grid-column:span 2}.project.featured h3{font-size:30px}.project.featured .project-media{aspect-ratio:16/7.6}
+    .cta-panel{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin-top:32px}.cta-panel h2{font-size:clamp(28px,3.4vw,44px);line-height:1.08;letter-spacing:-.045em}.cta-panel p{color:var(--muted);margin-top:10px;max-width:660px}.audience-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}.contact-box{border-radius:34px;padding:34px}.contact-box p{color:var(--muted)}.contact-mini-form{margin-top:22px;display:grid;gap:10px}.brief-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.social{display:flex;flex-direction:column;gap:10px;min-height:138px;word-break:break-word}.floating-cta{position:fixed;right:18px;bottom:18px;z-index:90;background:linear-gradient(135deg,var(--gold),#fff 50%,var(--cyan));border:1px solid rgba(255,255,255,.38);box-shadow:0 24px 84px rgba(0,0,0,.44),0 0 38px rgba(131,247,255,.18)}
+    footer{width:min(1240px,calc(100% - 52px));margin:0 auto 28px;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(145deg,rgba(255,255,255,.074),rgba(255,255,255,.026));border:1px solid rgba(255,255,255,.14)}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand img{width:34px;height:46px;object-fit:contain}.footer-text,.legal{color:var(--muted2);font-size:12px}.legal{max-width:600px;text-align:right;font-size:11px}.footer-links{display:flex;gap:12px;margin-top:8px}.footer-links a{color:var(--cyan);font-size:12px;font-weight:800}
+    @media(max-width:1080px){.hero-grid,.contact-grid,.metric-grid,.track-grid,.package-panel,.readiness-grid,.usecase-grid,.negative-grid{grid-template-columns:1fr}.cards,.why-grid,.projects-grid,.engagement-grid,.faq-grid,.deliverables-grid,.flow-steps,.build-path{grid-template-columns:repeat(2,minmax(0,1fr))}.audience-grid,.usecase-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.project.featured{grid-column:span 2}.hero-visual .bg{height:520px}.cta-panel{grid-template-columns:1fr}}
+    @media(max-width:760px){.container{width:calc(100% - 30px)}nav{top:10px;width:calc(100% - 20px);height:62px;border-radius:24px;padding:0 12px}.nav-brand span{font-size:11px}.menu-toggle{display:inline-flex}.nav-links{position:absolute;top:72px;right:0;left:0;display:none;flex-direction:column;align-items:stretch;gap:8px;padding:14px;border-radius:22px;background:rgba(5,8,16,.94);border:1px solid var(--line);box-shadow:var(--shadow)}.nav-links.open{display:flex}.nav-links a{padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.035)}.hero{padding:122px 0 64px}.hero:before{display:none}.hero-grid{gap:28px}.hero h1{font-size:48px}.hero-visual{transform:none;border-radius:30px}.hero-visual .bg{height:430px}.hero-card{left:18px;right:18px;bottom:18px;padding:18px}.hero-card img{width:48px;height:62px}.hero-card h2{font-size:19px}.section{padding:66px 0}.section:before{width:calc(100% - 44px)}.section-title{letter-spacing:-.052em}.cards,.why-grid,.projects-grid,.social-grid,.deliverables-grid,.package-list,.audience-grid,.brief-row,.engagement-grid,.faq-grid,.readiness-checks,.trust-strip,.flow-steps,.demo-outcome,.usecase-cards,.build-path,.negative-list{grid-template-columns:1fr}.project.featured{grid-column:span 1}.project.featured .project-media,.project-media{aspect-ratio:16/9!important}.project.featured h3{font-size:24px}.step{grid-template-columns:1fr;gap:8px}.cta-panel,.contact-box,.track-hero,.package-panel,.demo-flow-panel,.usecase-main{padding:26px}.metric-strip{margin-top:0}footer{flex-direction:column;align-items:flex-start;width:calc(100% - 30px)}.legal{text-align:left}.floating-cta{left:14px;right:14px;bottom:12px;width:auto}}
+  
+
+    /* ─────────────────────────────────────────────
+       SIZE CHECK PASS — responsive spacing and sizing polish
+       Keeps the same design while preventing oversized cards, nav overflow,
+       image distortion, and mobile crowding.
+    ───────────────────────────────────────────── */
+    html{scroll-padding-top:96px}
+    body{padding-bottom:0}
+    .container{width:min(1200px,calc(100% - 48px))}
+    .section{padding:96px 0}
+    .section-head{max-width:940px}
+    .section-title{max-width:920px}
+    nav{width:min(1140px,calc(100% - 32px));height:64px;padding:0 16px 0 18px}
+    .nav-links{gap:20px}
+    .nav-brand img{width:30px;height:40px}
+    .nav-brand span{font-size:12px;white-space:nowrap}
+    .hero{min-height:auto;padding:138px 0 82px}
+    .hero-grid{grid-template-columns:minmax(0,1.02fr) minmax(430px,.88fr);gap:48px}
+    .hero h1{font-size:clamp(46px,6vw,86px)}
+    .hero .tagline{font-size:clamp(17px,1.45vw,22px)}
+    .hero-visual .bg{height:clamp(460px,48vw,590px)}
+    .hero-card{left:28px;right:28px;bottom:28px;padding:22px;gap:16px}
+    .hero-card h2{font-size:clamp(18px,1.55vw,22px)}
+    .metric-strip{margin-top:-34px}
+    .metric{min-height:132px}
+    .cards{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{min-height:235px}
+    .why-card{min-height:245px}
+    .track-hero{min-height:100%}
+    .build-item,.deliverable,.engagement-card,.readiness-check,.faq-item,.audience,.social{min-height:unset}
+    .build-item{min-height:178px}
+    .deliverables-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .deliverable{min-height:210px}
+    .flow-step{min-height:205px}
+    .engagement-card{min-height:285px}
+    .readiness-check{min-height:152px}
+    .faq-item{min-height:158px}
+    .project-media{aspect-ratio:16/9}
+    .project.featured .project-media{aspect-ratio:16/8}
+    .project-body{min-height:245px}
+    .project.featured .project-body{min-height:220px}
+    .social{min-height:132px}
+    .contact-box{min-height:100%}
+    .brief-pill{min-height:68px;display:flex;align-items:center}
+    footer{width:min(1200px,calc(100% - 48px))}
+
+    @media(max-width:1180px){
+      nav{width:calc(100% - 28px)}
+      .nav-links{gap:16px}
+      .nav-links a{font-size:11px}
+      .hero-grid{grid-template-columns:1fr .9fr;gap:34px}
+      .cards,.deliverables-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .card,.deliverable{min-height:190px}
+      .flow-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .flow-step{min-height:180px}
+      .projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .project.featured{grid-column:span 2}
+      .project-body,.project.featured .project-body{min-height:230px}
+    }
+
+    @media(max-width:900px){
+      html{scroll-padding-top:86px}
+      .container{width:calc(100% - 34px)}
+      .hero-grid,.metric-grid,.track-grid,.negative-grid,.readiness-grid,.usecase-grid,.contact-grid,.package-panel{grid-template-columns:1fr}
+      .hero{padding:118px 0 62px}
+      .hero-visual .bg{height:440px}
+      .metric-strip{margin-top:0}
+      .metric{min-height:auto}
+      .why-grid,.engagement-grid,.audience-grid,.readiness-checks,.faq-grid,.usecase-cards,.social-grid,.build-path{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .flow-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .cta-panel{grid-template-columns:1fr;align-items:start}
+      .floating-cta{right:14px;bottom:14px}
+    }
+
+    @media(max-width:760px){
+      html{scroll-padding-top:78px}
+      body{padding-bottom:78px}
+      .container{width:calc(100% - 28px)}
+      nav{top:10px;width:calc(100% - 20px);height:60px;border-radius:22px;padding:0 12px}
+      .nav-brand img{width:28px;height:38px}
+      .nav-brand span{font-size:10.5px;letter-spacing:.055em;max-width:154px;overflow:hidden;text-overflow:ellipsis}
+      .menu-toggle{display:inline-flex;min-height:36px;padding:8px 13px}
+      .nav-links{position:absolute;top:70px;right:0;left:0;display:none;flex-direction:column;align-items:stretch;gap:8px;padding:14px;border-radius:22px;background:rgba(5,8,16,.96);border:1px solid var(--line);box-shadow:var(--shadow)}
+      .nav-links.open{display:flex}
+      .nav-links a{font-size:12px;padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.035)}
+      .hero{padding:108px 0 54px}
+      .hero-grid{gap:28px}
+      .hero h1{font-size:clamp(42px,13vw,52px);line-height:.98;letter-spacing:-.062em}
+      .hero .tagline{font-size:17px}
+      .hero p{font-size:15px}
+      .hero-actions{gap:10px;margin:24px 0}
+      .hero-actions .btn{width:100%}
+      .hero-badges,.trust-bar{gap:8px}
+      .badge,.trust-item{font-size:11px;padding:7px 10px}
+      .hero-visual{border-radius:28px;transform:none}
+      .hero-visual .bg{height:390px}
+      .hero-card{left:14px;right:14px;bottom:14px;padding:16px;grid-template-columns:1fr;gap:10px}
+      .hero-card img{width:44px;height:56px}
+      .section{padding:62px 0}
+      .section-title{font-size:clamp(31px,10vw,42px);letter-spacing:-.045em}
+      .section-lead{font-size:15px}
+      .cards,.why-grid,.projects-grid,.social-grid,.deliverables-grid,.package-list,.audience-grid,.brief-row,.engagement-grid,.faq-grid,.readiness-checks,.trust-strip,.flow-steps,.demo-outcome,.usecase-cards,.build-path,.negative-list{grid-template-columns:1fr}
+      .card,.why-card,.build-item,.deliverable,.flow-step,.engagement-card,.faq-item,.readiness-check,.project-body,.project.featured .project-body{min-height:auto}
+      .step{grid-template-columns:1fr;gap:8px;padding:20px}
+      .project.featured{grid-column:span 1}
+      .project.featured .project-media,.project-media{aspect-ratio:16/9!important}
+      .project.featured h3{font-size:24px}
+      .cta-panel,.contact-box,.track-hero,.package-panel,.demo-flow-panel,.usecase-main,.readiness-card{padding:24px}
+      footer{width:calc(100% - 28px);flex-direction:column;align-items:flex-start;margin-bottom:92px}
+      .legal{text-align:left}
+      .floating-cta{left:14px;right:14px;bottom:12px;width:auto;min-height:50px}
+    }
+
+    @media(max-width:420px){
+      .container{width:calc(100% - 22px)}
+      .hero h1{font-size:39px}
+      .hero-visual .bg{height:330px}
+      .hero-card h2{font-size:17px}
+      .hero-card p{font-size:12px}
+      .section{padding:54px 0}
+      .card,.why-card,.track-hero,.package-panel,.demo-flow-panel,.usecase-main,.readiness-card,.contact-box{padding:20px}
+      .metric,.project-body,.deliverable,.flow-step,.engagement-card,.faq-item,.audience,.social,.readiness-check{padding:18px}
+    }
+
+  
+
+    /* KHBP / King Hussein Business Park affiliation section */
+    .khbp-section{position:relative}
+    .khbp-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:24px;align-items:stretch}
+    .khbp-logo-card{border-radius:34px;padding:34px;display:flex;flex-direction:column;justify-content:space-between;min-height:390px;background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.028)),radial-gradient(circle at 20% 10%,rgba(255,216,117,.13),transparent 38%);border:1px solid rgba(255,216,117,.20)}
+    .khbp-logo-shell{min-height:142px;border-radius:28px;display:grid;place-items:center;padding:28px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+    .khbp-logo{max-width:260px;max-height:86px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 18px 36px rgba(0,0,0,.28))}
+    .khbp-fallback{display:none;font-size:34px;letter-spacing:.12em;color:#fff;text-align:center}
+    .khbp-logo-card h3{font-size:clamp(28px,3vw,44px);line-height:1.08;letter-spacing:-.04em;margin:24px 0 12px}
+    .khbp-logo-card p{color:var(--muted);font-size:15px}
+    .khbp-content{border-radius:34px;padding:34px;background:linear-gradient(135deg,rgba(131,247,255,.10),rgba(168,149,255,.055),rgba(255,255,255,.026));border:1px solid rgba(131,247,255,.20)}
+    .khbp-content h2{font-size:clamp(32px,4.2vw,58px);line-height:1.04;letter-spacing:-.058em;margin-bottom:14px}
+    .khbp-content h2 strong{background:linear-gradient(135deg,#fff 0%,#dff8ff 34%,var(--cyan) 62%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .khbp-content p{color:var(--muted);max-width:760px}
+    .khbp-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}
+    .khbp-proof div{border-radius:20px;padding:18px;background:rgba(255,255,255,.052);border:1px solid rgba(255,255,255,.13)}
+    .khbp-proof b{display:block;color:#fff;font-size:18px;margin-bottom:6px}
+    .khbp-proof span{color:var(--muted);font-size:13px;display:block;line-height:1.55}
+    .khbp-note{margin-top:22px;border-radius:22px;padding:18px;border:1px solid rgba(255,216,117,.20);background:rgba(255,216,117,.055);color:var(--muted);font-size:13px}
+    .khbp-note b{color:#fff}
+
+    @media(max-width:900px){.khbp-grid{grid-template-columns:1fr}.khbp-logo-card{min-height:auto}.khbp-proof{grid-template-columns:1fr}}
+    @media(max-width:760px){.khbp-logo-card,.khbp-content{padding:24px}.khbp-logo-shell{min-height:118px}.khbp-logo{max-width:220px;max-height:72px}}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="#hero" aria-label="Penguin AI Studio home">
+      <img src="assets/logo.png" alt="Penguin AI Studio logo" width="31" height="42">
+      <span>Penguin AI Studio</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false">Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#capabilities">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Apple Vision Pro • visionOS • Spatial Computing</div>
+          <h1><span>We build</span><br><strong>spatial products for Apple Vision Pro.</strong></h1>
+          <p class="tagline">Premium spatial apps, immersive simulators, and investor-ready Vision Pro prototypes.</p>
+          <p>Penguin AI Studio designs Apple Vision Pro applications, visionOS interfaces, immersive training simulators, AI dashboards, and launch-ready spatial computing prototypes for immersive training, enterprise demos, and visionOS MVPs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Vision Pro Concepts</a>
+            <a class="btn btn-secondary" href="#contact">Request a Build</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">Independent Vision Pro Studio</span>
+            <span class="badge">Spatial UX + Prototypes</span>
+            <span class="badge">AI Workflows + MVP Direction</span>
+          </div>
+          <div class="trust-bar" aria-label="Who Penguin AI Studio helps">
+            <span class="trust-item">For startups</span>
+            <span class="trust-item">Training centers</span>
+            <span class="trust-item">Institutions</span>
+            <span class="trust-item">Enterprise demos</span>
+          </div>
+        </div>
+        <div class="hero-visual glass">
+          <img class="bg" src="assets/hero.webp" alt="Penguin AI Studio spatial computing hero visual" width="2048" height="1152" fetchpriority="high">
+          <div class="hero-card">
+            <div><h2>Vision Pro products that feel spatial, useful, and launch-ready.</h2><p>From immersive training to AI dashboards, we turn strong concepts into premium product experiences.</p></div>
+            <img src="assets/logo.png" alt="Penguin AI Studio logo" width="62" height="78">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="metric-strip container">
+      <div class="metric-grid">
+        <div class="metric"><small>Positioning</small><strong>Apple Vision Pro app studio</strong><p>Focused on spatial UX, premium interface systems, and prototype-to-MVP execution.</p></div>
+        <div class="metric"><small>Output</small><strong>Concept → Prototype</strong><p>Clear product direction, cinematic UI, and build-ready workflows.</p></div>
+        <div class="metric"><small>Use Cases</small><strong>Training + Simulation</strong><p>Healthcare, aviation, automotive, fitness, music, architecture, and data-heavy products.</p></div>
+        <div class="metric"><small>Location</small><strong>Amman, Jordan</strong><p>Founder-led studio serving regional and global product teams.</p></div>
+      </div>
+    </div>
+
+    <section class="section" id="capabilities"><div class="container"><div class="section-head"><div class="eyebrow">Capabilities</div><h2 class="section-title">What we build for the <strong>Vision Pro era.</strong></h2><p class="section-lead">Practical spatial products with premium Apple-style interfaces, useful AI layers, and a clear path from demo to MVP.</p></div><div class="cards">
+      <article class="card glass"><div class="num">01</div><h3>visionOS Experience Design</h3><p>Spatial layouts, floating panels, depth-aware interfaces, onboarding flows, and interaction systems for Apple Vision Pro.</p></article>
+      <article class="card glass"><div class="num">02</div><h3>Immersive Simulators</h3><p>Training products for healthcare, automotive, aviation, fitness, architecture, music, and specialized workflows.</p></article>
+      <article class="card glass"><div class="num">03</div><h3>AI Product Workflows</h3><p>Guided decisions, adaptive scoring, smart assistants, automated interpretation, and contextual interface support.</p></article>
+      <article class="card glass"><div class="num">04</div><h3>Prototype to MVP</h3><p>Concept refinement, visual prototypes, technical planning, MVP architecture, and development-ready handoff.</p></article>
+    </div></div></section>
+
+    <section class="section" id="build-path"><div class="container"><div class="section-head"><div class="eyebrow">Featured Build Path</div><h2 class="section-title">A commercial path from <strong>idea to development scope.</strong></h2><p class="section-lead">A shorter, business-focused view of how a Vision Pro concept becomes easier to present, validate, and build.</p></div><div class="build-path">
+      <div class="build-item glass"><b>Concept Brief</b><span>Clarify use case, audience, value proposition, and why Vision Pro matters.</span></div>
+      <div class="build-item glass"><b>Prototype Demo</b><span>Create premium screens, spatial flows, and a demo story stakeholders can understand.</span></div>
+      <div class="build-item glass"><b>MVP Roadmap</b><span>Define features, assumptions, data needs, and the first testable version.</span></div>
+      <div class="build-item glass"><b>Development Scope</b><span>Prepare a practical scope that helps estimate effort, phases, and next steps.</span></div>
+    </div></div></section>
+
+    <section class="section" id="tracks"><div class="container"><div class="section-head"><div class="eyebrow">Product Tracks</div><h2 class="section-title">Clear paths for <strong>high-value Vision Pro products.</strong></h2><p class="section-lead">Instead of making a generic demo, we shape the idea into a focused product track with the right interface, data layer, and proof-of-concept scope.</p></div><div class="track-grid"><div class="track-hero glass"><h3>From impressive visual concept to practical product direction.</h3><p>Every Vision Pro idea needs a clear job: train, explain, simulate, visualize, guide, or sell. We define that job first, then design the spatial experience around it.</p></div><div class="track-list"><div class="track-item"><b>Training Simulators</b><span>Emergency response, aviation, automotive repair, industrial procedures, and skill-based learning.</span></div><div class="track-item"><b>Spatial Dashboards</b><span>Large-format analytics, trading workspaces, operations rooms, smart city visuals, and executive monitoring.</span></div><div class="track-item"><b>Product Demos</b><span>Investor-ready concepts, founder prototypes, enterprise sales demos, and spatial storytelling experiences.</span></div></div></div></div></section>
+
+    <section class="section" id="why"><div class="container"><div class="section-head"><div class="eyebrow">Why Penguin AI Studio</div><h2 class="section-title">A focused studio for <strong>serious spatial products.</strong></h2></div><div class="why-grid"><article class="why-card glass"><div class="why-icon">01</div><h3>Vision-first product thinking</h3><p>We start from spatial behavior, user context, and real use cases — not just flat screens placed in 3D space.</p></article><article class="why-card glass"><div class="why-icon">02</div><h3>Premium Apple-style interface design</h3><p>Clean hierarchy, soft glass panels, depth, motion, and high-end visual polish suitable for executive demos.</p></article><article class="why-card glass"><div class="why-icon">03</div><h3>Prototype-to-MVP execution</h3><p>We turn concepts into a roadmap, prototype, and practical product structure that can move toward development.</p></article></div></div></section>
+
+    <section class="section" id="process"><div class="container"><div class="section-head"><div class="eyebrow">Process</div><h2 class="section-title">From idea to <strong>spatial prototype.</strong></h2><p class="section-lead">A simple workflow for founders, institutions, and teams exploring Apple Vision Pro products.</p></div><div class="process"><article class="step glass"><div class="step-num">01</div><div><h3>Product Discovery</h3><p>Define the audience, use case, business goal, interaction model, and success criteria.</p></div></article><article class="step glass"><div class="step-num">02</div><div><h3>Spatial UX Architecture</h3><p>Map panels, navigation, 3D moments, AI layers, and user flows for the Vision Pro environment.</p></div></article><article class="step glass"><div class="step-num">03</div><div><h3>Premium Interface Design</h3><p>Create cinematic UI visuals and product screens that communicate the experience clearly.</p></div></article><article class="step glass"><div class="step-num">04</div><div><h3>Prototype / MVP Direction</h3><p>Prepare a clickable demo, technical handoff, or development-ready product plan.</p></div></article></div></div></section>
+
+    <section class="section" id="demo-flow"><div class="container"><div class="section-head"><div class="eyebrow">From Idea to Demo</div><h2 class="section-title">A clearer path from <strong>raw concept to investor-ready Vision Pro demo.</strong></h2><p class="section-lead">This section shows visitors exactly how Penguin AI Studio turns a simple idea into a spatial product story, prototype direction, and MVP roadmap.</p></div><div class="demo-flow-panel glass"><div class="flow-steps"><article class="flow-step"><small>Step 01</small><h3>Idea</h3><p>Clarify the core problem, audience, value, and why Apple Vision Pro is the right medium.</p></article><article class="flow-step"><small>Step 02</small><h3>Spatial UX</h3><p>Map panels, depth, gestures, environment context, object interaction, and user movement.</p></article><article class="flow-step"><small>Step 03</small><h3>Visual Prototype</h3><p>Create premium screens and hero moments that make the concept easy to understand.</p></article><article class="flow-step"><small>Step 04</small><h3>Demo Story</h3><p>Shape the experience into a pitch-ready narrative for stakeholders, investors, or partners.</p></article><article class="flow-step"><small>Step 05</small><h3>MVP Roadmap</h3><p>Define build phases, assumptions, features, and the first testable version of the product.</p></article></div><div class="demo-outcome"><span><b>Less ambiguity:</b> everyone understands what the app does.</span><span><b>Stronger pitch:</b> visuals and story communicate the value fast.</span><span><b>Better build path:</b> the MVP becomes easier to plan and estimate.</span></div></div></div></section>
+
+    <section class="section" id="deliverables"><div class="container"><div class="section-head"><div class="eyebrow">Deliverables</div><h2 class="section-title">What you get from a <strong>Vision Pro brief.</strong></h2><p class="section-lead">A focused package that helps you present the idea, validate the direction, and move toward development with less ambiguity.</p></div><div class="deliverables-grid"><article class="deliverable glass"><small>01</small><h3>Product Strategy</h3><p>Audience, use case, value proposition, core scenarios, and MVP scope.</p></article><article class="deliverable glass"><small>02</small><h3>Spatial UX Map</h3><p>Navigation, panels, depth layers, object interaction, and environment behavior.</p></article><article class="deliverable glass"><small>03</small><h3>Premium UI Direction</h3><p>Apple-style visual system, glass components, typography, motion notes, and screen hierarchy.</p></article><article class="deliverable glass"><small>04</small><h3>Prototype Assets</h3><p>Hero visuals, concept screens, presentation-ready mockups, and project story.</p></article><article class="deliverable glass"><small>05</small><h3>MVP Roadmap</h3><p>Recommended build phases, technical assumptions, data needs, and next-step priorities.</p></article></div><div class="package-panel glass"><div><h3>Built for founders, institutions, and teams that need to explain the future clearly.</h3><p>This package is especially useful before investor meetings, ministry/incubator submissions, pilot proposals, or early product development.</p></div><div class="package-list"><span>Investor-ready concept narrative</span><span>Clickable prototype direction</span><span>Pitch visuals and product story</span><span>Development-ready MVP outline</span></div></div></div></section>
+
+    <section class="section" id="engagements"><div class="container"><div class="section-head"><div class="eyebrow">Engagement Models</div><h2 class="section-title">Choose the right level of <strong>Vision Pro support.</strong></h2><p class="section-lead">Different teams need different starting points. These tracks make it easier for visitors to understand how they can work with Penguin AI Studio.</p></div><div class="engagement-grid"><article class="engagement-card glass"><small>Starter</small><h3>Concept Brief</h3><p>Best for validating an idea before a pitch, meeting, or grant submission.</p><div class="engagement-list"><span>Use-case definition</span><span>Spatial product angle</span><span>Initial screen direction</span></div></article><article class="engagement-card glass"><small>Prototype</small><h3>Investor Demo Package</h3><p>Best for founders and institutions that need a premium visual concept and clear story.</p><div class="engagement-list"><span>Hero visuals and UI screens</span><span>Prototype flow direction</span><span>Pitch-ready product narrative</span></div></article><article class="engagement-card glass"><small>MVP</small><h3>Build Roadmap</h3><p>Best for teams preparing to move from concept into real development and testing.</p><div class="engagement-list"><span>Feature scope</span><span>Technical assumptions</span><span>Development phases</span></div></article></div></div></section>
+
+    <section class="section" id="not-generic"><div class="container negative-grid"><div class="track-hero glass"><div class="eyebrow">What We Do Not Do</div><h3>We do not create generic mockups.</h3><p>Penguin AI Studio focuses on usable spatial product direction, investor-ready demos, and MVP planning — not random futuristic screens with no product logic.</p></div><div class="negative-list"><div><b>No generic UI decoration</b>Every screen should support a user scenario, decision, training flow, or product objective.</div><div><b>No unclear demo story</b>The concept should be easy to explain to investors, partners, internal teams, or institutions.</div><div><b>No overbuilt first version</b>We help define the smallest useful Vision Pro prototype before moving into full development.</div></div></div></section>
+
+    <section class="section" id="readiness"><div class="container readiness-grid"><div class="readiness-card glass"><div class="eyebrow">Technical Readiness</div><h3>Make the idea easier to build, not just easier to imagine.</h3><p>A strong Vision Pro concept needs more than beautiful screens. It needs interaction logic, data assumptions, user scenarios, and a realistic MVP path.</p><div class="trust-strip"><div class="trust-pill"><b>visionOS-aware</b>Designed around spatial interaction patterns.</div><div class="trust-pill"><b>AI-ready</b>Prepared for assistants, scoring, and smart workflows.</div><div class="trust-pill"><b>Demo-ready</b>Structured for pitches and stakeholder review.</div><div class="trust-pill"><b>MVP-ready</b>Clear enough to guide development planning.</div></div></div><div class="readiness-checks"><div class="readiness-check"><b>User scenarios</b><span>Who uses it, where they are, and what they need to accomplish.</span></div><div class="readiness-check"><b>Spatial layout rules</b><span>What lives in front of the user, around them, or inside a 3D object.</span></div><div class="readiness-check"><b>Data and AI layer</b><span>What information powers the experience and where automation helps.</span></div><div class="readiness-check"><b>Prototype scope</b><span>What should be shown first to prove value without overbuilding.</span></div></div></div></section>
+
+    <section class="section" id="faq"><div class="container"><div class="section-head"><div class="eyebrow">FAQ</div><h2 class="section-title">Common questions before starting a <strong>Vision Pro brief.</strong></h2></div><div class="faq-grid"><article class="faq-item glass"><h3>Do we need a full app idea?</h3><p>No. A rough concept is enough. We can help shape the target user, core scenario, interface direction, and MVP scope.</p></article><article class="faq-item glass"><h3>Can this be used for investors or incubators?</h3><p>Yes. The brief can be structured as a pitch-ready prototype story with visuals, use cases, and a development roadmap.</p></article><article class="faq-item glass"><h3>Do you only design, or also plan development?</h3><p>The site focuses on strategy, UI, prototype direction, and MVP planning. Development scope can be defined after the brief.</p></article><article class="faq-item glass"><h3>Is Penguin AI Studio affiliated with Apple?</h3><p>No. Penguin AI Studio is an independent studio. Apple, Apple Vision Pro, and visionOS are trademarks of Apple Inc.</p></article></div></div></section>
+
+    <section class="section" id="usecase"><div class="container"><div class="section-head"><div class="eyebrow">Use Case Example</div><h2 class="section-title">How a Vision Pro app creates <strong>real business value.</strong></h2><p class="section-lead">A concrete example helps clients understand that spatial computing is not just visual polish — it can reduce training risk, improve repetition, and make complex decisions easier to practice.</p></div><div class="usecase-grid"><div class="usecase-main glass"><small>EmergencyRoom Pro</small><h3>Immersive ER training without the risk of real-world mistakes.</h3><p>EmergencyRoom Pro shows how an Apple Vision Pro simulator can train teams through realistic patient scenarios, vital signs, decision points, medical tools, and post-session performance scoring.</p></div><div class="usecase-cards"><div class="usecase-card"><b>Problem</b><span>Medical training can be expensive, limited, stressful, and difficult to repeat safely with real patients.</span></div><div class="usecase-card"><b>Vision Pro Solution</b><span>A spatial emergency room with patient status, floating monitors, tools, scenarios, and guided decisions.</span></div><div class="usecase-card"><b>AI Layer</b><span>Adaptive scoring, decision feedback, scenario variation, and automated post-training review.</span></div><div class="usecase-card highlight"><b>Business Result</b><span>Safer practice, repeatable simulations, clearer evaluation, and a stronger case for institutional adoption.</span></div></div></div></div></section>
+
+    <section class="section" id="projects"><div class="container"><div class="section-head"><div class="eyebrow">Vision Pro Projects</div><h2 class="section-title">Concepts for <strong>next-gen spatial applications.</strong></h2><p class="section-lead">Examples of Apple Vision Pro simulators, immersive training apps, and spatial dashboards that Penguin AI Studio can design, prototype, and turn into MVPs.</p></div><div class="projects-grid">
+      <article class="project featured glass"><div class="project-media"><img src="assets/projects/pilotvision-pro.webp" alt="PilotVision Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">01</span><span class="project-type">Training Simulator</span></div><h3>PilotVision Pro</h3><p>A spatial flight simulator with cockpit overlays, route planning, landing scoring, aircraft presets, and real-time performance feedback.</p><div class="tags"><span>Aviation</span><span>Simulation</span><span>Spatial UI</span></div></div></article>
+      <article class="project glass"><div class="project-media"><img src="assets/projects/emergencyroom-pro.webp" alt="EmergencyRoom Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">02</span><span class="project-type">Healthcare</span></div><h3>EmergencyRoom Pro</h3><p>An immersive ER scenario system for triage, vitals monitoring, decision scoring, lab results, imaging panels, and procedure guidance.</p><div class="tags"><span>Healthcare</span><span>Education</span><span>Decision UI</span></div></div></article>
+      <article class="project glass"><div class="project-media"><img src="assets/projects/fitnesscoach-vision-pro.webp" alt="FitnessCoach Vision Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">03</span><span class="project-type">Fitness</span></div><h3>FitnessCoach Vision Pro</h3><p>A virtual coach with posture correction, body tracking, repetition counting, live biometrics, and guided workout programs.</p><div class="tags"><span>Body Tracking</span><span>Coaching</span><span>Real-time Feedback</span></div></div></article>
+      <article class="project glass"><div class="project-media"><img src="assets/projects/drumvision-pro.webp" alt="DrumVision Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">04</span><span class="project-type">Music Learning</span></div><h3>DrumVision Pro</h3><p>A next-generation drum practice environment with floating controls, tempo tools, transparent drum kits, and performance feedback.</p><div class="tags"><span>Music</span><span>Learning</span><span>Timing</span></div></div></article>
+      <article class="project glass"><div class="project-media"><img src="assets/projects/carmechanic-vision-pro.webp" alt="CarMechanic Vision Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">05</span><span class="project-type">Automotive</span></div><h3>CarMechanic Vision Pro</h3><p>A repair trainer using spatial diagnostics, 3D exploded parts, repair checklists, and safety-focused workflows.</p><div class="tags"><span>Training</span><span>Diagnostics</span><span>3D Guidance</span></div></div></article>
+      <article class="project glass"><div class="project-media"><img src="assets/projects/architectvision-pro.webp" alt="ArchitectVision Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">06</span><span class="project-type">Architecture</span></div><h3>ArchitectVision Pro</h3><p>A spatial design simulator for layouts, furniture placement, material palettes, measurements, lighting, and client-ready previews.</p><div class="tags"><span>Interior Design</span><span>Spatial Preview</span><span>Client Demo</span></div></div></article>
+      <article class="project glass"><div class="project-media"><img src="assets/projects/tradevision-pro.webp" alt="TradeVision Pro interface concept" width="1600" height="900" loading="lazy"></div><div class="project-body"><div class="project-top"><span class="project-no">07</span><span class="project-type">Fintech</span></div><h3>TradeVision Pro</h3><p>A spatial trading workspace with market dashboards, watchlists, order panels, heatmaps, portfolio analytics, and large-format charting.</p><div class="tags"><span>Dashboards</span><span>Analytics</span><span>Spatial Workspace</span></div></div></article>
+    </div><div class="cta-panel glass"><div><h2>Have a Vision Pro concept?</h2><p>Let’s turn it into a prototype, investor-ready demo, or MVP roadmap for Apple Vision Pro.</p></div><a class="btn btn-primary" href="#contact">Build Your First Vision Pro Prototype</a></div></div></section>
+
+
+
+    <section class="section khbp-section" id="khbp">
+      <div class="container khbp-grid">
+        <div class="khbp-logo-card glass">
+          <div>
+            <div class="eyebrow">Innovation Base</div>
+            <div class="khbp-logo-shell">
+              <img class="khbp-logo" src="https://staging.businesspark-jo.com/wp-content/uploads/2025/01/group.webp" alt="King Hussein Business Park logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+              <strong class="khbp-fallback">KHBP</strong>
+            </div>
+            <h3>Based at King Hussein Business Park.</h3>
+            <p>Penguin AI Studio operates from King Hussein Business Park in Amman, Jordan, within a business ecosystem built for innovation, investment, and growth.</p>
+          </div>
+        </div>
+        <div class="khbp-content glass">
+          <div class="eyebrow">Incubation & Location</div>
+          <h2>Incubated within <strong>Jordan’s leading innovation business park.</strong></h2>
+          <p>Our company is located at and supported by King Hussein Business Park, giving Penguin AI Studio a strong base for building Apple Vision Pro concepts, investor-ready demos, and spatial computing products from Jordan.</p>
+          <div class="khbp-proof">
+            <div><b>Amman Innovation Hub</b><span>KHBP is positioned as a premier destination for innovation, investment, and impact.</span></div>
+            <div><b>Business Ecosystem</b><span>The park brings together startups, international companies, regional corporations, and high-impact sectors.</span></div>
+            <div><b>Growth Infrastructure</b><span>Modern offices, co-working environments, advanced infrastructure, and a government-supported business zone.</span></div>
+          </div>
+          <div class="khbp-note"><b>Note:</b> Penguin AI Studio is an independent company. The reference to King Hussein Business Park reflects our location and incubation/support environment.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="audiences"><div class="container"><div class="section-head"><div class="eyebrow">Who We Help</div><h2 class="section-title">Designed for teams exploring <strong>spatial computing seriously.</strong></h2><p class="section-lead">The site should make it obvious who Penguin AI Studio can help and why a Vision Pro prototype matters.</p></div><div class="audience-grid"><div class="audience glass"><b>Startups</b><span>Turn a bold spatial idea into a pitch-ready prototype.</span></div><div class="audience glass"><b>Training Centers</b><span>Create immersive learning and simulation experiences.</span></div><div class="audience glass"><b>Enterprises</b><span>Visualize workflows, dashboards, operations, and product demos.</span></div><div class="audience glass"><b>Institutions</b><span>Build innovation pilots for education, healthcare, architecture, and smart cities.</span></div></div></div></section>
+
+    <section class="section" id="contact"><div class="container contact-grid"><div class="contact-box glass"><img src="assets/logo.png" alt="Penguin AI Studio logo" width="84" height="108" style="width:84px;height:108px;object-fit:contain;margin-bottom:24px;filter:drop-shadow(0 0 22px rgba(131,247,255,.20))"><div class="eyebrow">Start a Brief</div><h2 class="section-title" style="font-size:clamp(30px,4vw,52px)">Have an Apple Vision Pro app idea?</h2><p>Send us your idea and we’ll reply with the recommended Vision Pro build path: concept brief, investor demo, MVP roadmap, or development scope.</p><div class="contact-mini-form"><div class="brief-row"><div class="brief-pill">1. What is the Vision Pro idea?</div><div class="brief-pill">2. Who will use it?</div><div class="brief-pill">3. Do you need a demo or MVP?</div></div></div><div class="hero-actions"><a class="btn btn-primary" href="mailto:hello@penguinstudio.app?subject=Vision%20Pro%20Brief%20Request&body=Hi%20Penguin%20AI%20Studio,%0A%0AI%20want%20to%20discuss%20a%20Vision%20Pro%20concept.%0A%0AIdea:%0ATarget%20users:%0AGoal:%0A%0AThanks">hello@penguinstudio.app</a><a class="btn btn-secondary" href="mailto:hello@penguinstudio.app?subject=Discovery%20Call%20Request&body=Hi%20Penguin%20AI%20Studio,%0A%0AI%20would%20like%20to%20book%20a%20discovery%20call%20to%20discuss%20a%20Vision%20Pro%20concept.%0A%0APreferred%20time:%0AIdea:%0A%0AThanks">Book a Discovery Call</a></div></div><div class="social-grid"><a class="social glass" href="https://www.instagram.com/penguin.ai.studio/" target="_blank" rel="noopener"><b>Instagram</b><span>@penguin.ai.studio</span></a><a class="social glass" href="https://www.linkedin.com/company/penguin-ai-studio" target="_blank" rel="noopener"><b>LinkedIn</b><span>company/penguin-ai-studio</span></a><a class="social glass" href="https://www.facebook.com/profile.php?id=61590183740058" target="_blank" rel="noopener"><b>Facebook</b><span>Penguin AI Studio</span></a><a class="social glass" href="https://www.youtube.com/@PenguinAIStudio" target="_blank" rel="noopener"><b>YouTube</b><span>@PenguinAIStudio</span></a></div></div></section>
+  </main>
+
+  <footer class="glass"><div><div class="footer-brand"><img src="assets/logo.png" alt="Penguin AI Studio logo" width="34" height="46"><div><strong>Penguin AI Studio</strong><div class="footer-text">AI • Apple Vision Pro • visionOS • Spatial Computing</div></div></div><div class="footer-links"><a href="https://www.instagram.com/penguin.ai.studio/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/penguin-ai-studio" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/profile.php?id=61590183740058" target="_blank" rel="noopener">Facebook</a><a href="https://www.youtube.com/@PenguinAIStudio" target="_blank" rel="noopener">YouTube</a></div></div><div class="legal">© 2026 Penguin AI Studio. Independent studio based in Amman, Jordan. Apple, Apple Vision Pro, and visionOS are trademarks of Apple Inc. Penguin AI Studio is not affiliated with or endorsed by Apple Inc.</div></footer>
+  <a class="btn btn-primary floating-cta" href="mailto:hello@penguinstudio.app?subject=Vision%20Pro%20Brief%20Request&body=Hi%20Penguin%20AI%20Studio,%0A%0AI%20want%20to%20discuss%20a%20Vision%20Pro%20concept.%0A%0AIdea:%0ATarget%20users:%0AGoal:%0A%0AThanks" aria-label="Start a Vision Pro brief by email">Start a Brief</a>
+  <script>
+    const toggle=document.querySelector('.menu-toggle');const links=document.querySelector('#navLinks');
+    toggle?.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close':'Menu'});
+    links?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle?.setAttribute('aria-expanded','false');if(toggle)toggle.textContent='Menu'}));
+  </script>
+</body>
+</html>
