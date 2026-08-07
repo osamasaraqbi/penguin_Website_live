@@ -1,60 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Penguin Short Publisher — Penguin Music Studio</title>
-  <meta name="description" content="Penguin Short Publisher is Penguin Music Studio's internal tool for securely connecting TikTok and publishing original short-form music videos." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="/penguin_site_assets/penguin-logo.png" />
-  <style>
-    :root{color-scheme:dark;--bg:#040505;--panel:#111213;--line:rgba(255,255,255,.10);--gold:#ffc451;--green:#72e5a8;--text:#fbf4df;--muted:#b8bec4;--max:980px}
-    *{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(circle at 18% 0%,rgba(255,196,81,.10),transparent 28%),linear-gradient(180deg,#080907,#030404 55%,#070604);color:var(--text);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 36px),var(--max));margin:0 auto}.nav{height:76px;border-bottom:1px solid rgba(255,196,81,.14);display:flex;align-items:center;background:rgba(6,7,7,.92);backdrop-filter:blur(16px);position:sticky;top:0;z-index:10}.navin{display:flex;align-items:center;gap:12px}.logo{width:40px;height:46px;object-fit:contain}.brand{font-family:Sora,sans-serif;font-weight:800}.brand small{display:block;margin-top:3px;color:#ead083;font:700 9px/1 Inter;letter-spacing:.14em;text-transform:uppercase}.hero{padding:92px 0 44px}.kicker{display:inline-flex;padding:8px 12px;border:1px solid rgba(255,196,81,.22);border-radius:999px;color:#ead083;font-size:12px;font-weight:800;background:rgba(255,196,81,.06)}h1{font-family:Sora,sans-serif;font-size:clamp(42px,7vw,72px);line-height:.98;letter-spacing:-.05em;margin:18px 0}.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0}.card{border:1px solid var(--line);border-radius:18px;padding:22px;background:linear-gradient(180deg,rgba(24,25,26,.88),rgba(10,11,12,.92));box-shadow:0 24px 60px rgba(0,0,0,.24)}.num{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(114,229,168,.08);border:1px solid rgba(114,229,168,.20);color:var(--green);font-weight:800}.card h2{font:700 17px Sora,sans-serif;margin:16px 0 8px}.card p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}.section{padding:28px 0 72px}.notice{border:1px solid rgba(255,196,81,.16);background:rgba(255,196,81,.045);border-radius:18px;padding:24px;line-height:1.7;color:var(--muted)}.notice strong{color:var(--text)}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;min-height:44px;align-items:center;padding:0 16px;border-radius:12px;border:1px solid var(--line);background:#111214;font-weight:700}.btn.primary{background:linear-gradient(145deg,#f0cf64,#b99032);color:#080704;border-color:rgba(255,224,130,.38)}footer{border-top:1px solid var(--line);padding:26px 0 40px;color:#89919a;font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footlinks{display:flex;gap:18px}@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding-top:66px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Penguin Short Publisher — Penguin Music Studio</title>
+<meta name="description" content="Connect your TikTok account, preview your video, choose posting settings, and publish through TikTok's official Content Posting API.">
+<link rel="icon" type="image/png" href="/penguin_site_assets/penguin-logo.png">
+<style>
+:root{color-scheme:dark;--bg:#05090d;--panel:#0c1721;--line:#233747;--muted:#91a3b4;--text:#f4f7fa;--gold:#e8c96b;--ok:#95e0b3;--bad:#ff9a9a}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 18% 0,#132536 0,transparent 32%),linear-gradient(180deg,#081018,#05090d);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.shell{width:min(1180px,94vw);margin:32px auto 70px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}.brandrow{display:flex;align-items:center;gap:13px}.logo{width:42px;height:48px;object-fit:contain}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:800}h1{margin:5px 0 0;font-size:clamp(28px,4vw,44px);letter-spacing:-.035em}.sub{margin:9px 0 0;color:var(--muted);font-size:13px;line-height:1.55}.grid{display:grid;grid-template-columns:minmax(320px,.92fr) minmax(360px,1.08fr);gap:22px}.card{background:rgba(12,23,33,.94);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.22)}.stack{display:grid;gap:16px}.row{display:flex;gap:10px;flex-wrap:wrap}.hidden{display:none!important}.account{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#08131c}.account img{width:46px;height:46px;border-radius:50%;object-fit:cover}.account strong{display:block}.account small{color:var(--muted)}label,legend{font-size:13px;font-weight:700}input[type=text],select{width:100%;margin-top:8px;padding:12px 13px;border:1px solid var(--line);border-radius:10px;background:#07111a;color:var(--text);outline:none}input[type=file]{width:100%;padding:12px;border:1px dashed #35516a;border-radius:10px;background:#07111a;color:var(--muted)}fieldset{border:1px solid var(--line);border-radius:12px;padding:14px}.checks{display:grid;gap:10px;margin-top:10px}.check{display:flex;gap:9px;align-items:flex-start;color:#c8d3dc;font-size:13px;line-height:1.45}.check input{margin-top:3px}.muted{color:var(--muted);font-size:13px;line-height:1.55}.notice{padding:12px 14px;border-radius:10px;border:1px solid #334b5f;background:#09141e;color:#aebdca;font-size:13px;line-height:1.55}.status{min-height:20px;color:var(--muted);font-size:13px;white-space:pre-wrap}.status.ok{color:var(--ok)}.status.error{color:var(--bad)}button,.button{appearance:none;display:inline-flex;justify-content:center;align-items:center;border:1px solid #40586d;background:#e7eef4;color:#071018;font-weight:800;border-radius:10px;padding:12px 16px;text-decoration:none;cursor:pointer}.secondary{background:transparent!important;color:var(--text)!important;border-color:var(--line)!important}button:disabled{opacity:.42;cursor:not-allowed}video{width:100%;max-height:640px;border-radius:14px;background:#000;display:block}.legal{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px;color:var(--muted);font-size:12px}.legal a{color:#c8d3dc}@media(max-width:820px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap navin">
-      <img class="logo" src="/penguin_site_assets/penguin-logo.png" alt="Penguin Studio logo" />
-      <div class="brand">Penguin Music Studio<small>Penguin Short Publisher</small></div>
-    </div>
-  </header>
+<div class="shell">
+<header class="top">
+  <div class="brandrow">
+    <img class="logo" src="/penguin_site_assets/penguin-logo.png" alt="Penguin Music Studio logo">
+    <div><div class="eyebrow">Penguin Music Studio</div><h1>Penguin Short Publisher</h1><p class="sub">Connect your own TikTok account, review the exact video and settings, then publish through TikTok's official API.</p></div>
+  </div>
+  <div class="row">
+    <a id="connectBtn" class="button" href="https://penguin-tiktok-oauth-bridge.osama-alsaraqbi.workers.dev/oauth/tiktok/web/start">Connect TikTok</a>
+    <button id="logoutBtn" class="secondary hidden" type="button">Disconnect</button>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <span class="kicker">Internal publishing tool</span>
-        <h1>Penguin Short Publisher</h1>
-        <p class="lead">A secure internal web tool used by Penguin Music Studio to connect an authorized TikTok account and publish original short-form music videos through TikTok's official developer APIs.</p>
+<div class="grid">
+<section class="card stack">
+  <div id="accountBox" class="account hidden"><img id="avatar" alt=""><div><strong id="nickname">TikTok creator</strong><small id="username"></small></div></div>
 
-        <div class="grid">
-          <article class="card"><div class="num">01</div><h2>Connect</h2><p>Authorized studio operators connect TikTok using TikTok's OAuth authorization flow. TikTok passwords are never collected by Penguin Short Publisher.</p></article>
-          <article class="card"><div class="num">02</div><h2>Prepare</h2><p>The studio reviews the original video, caption, privacy settings, and publishing metadata before a post is submitted.</p></article>
-          <article class="card"><div class="num">03</div><h2>Publish</h2><p>The tool submits approved short-form content to TikTok using the Content Posting API and records publishing status for studio operations.</p></article>
-        </div>
-      </div>
-    </section>
+  <div><label for="videoFile">Video file</label><input id="videoFile" type="file" accept="video/mp4,video/quicktime,video/webm"><div id="videoFacts" class="muted" style="margin-top:8px"></div></div>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="notice"><strong>Access is restricted.</strong> Penguin Short Publisher is not a public consumer application. It is an internal publishing workflow for Penguin Music Studio and is intended only for authorized studio operators and TikTok accounts they are permitted to manage.</div>
-        <div class="links">
-          <a class="btn primary" href="/privacy/">Privacy Policy</a>
-          <a class="btn" href="/terms/">Terms of Service</a>
-          <a class="btn" href="/">Penguin Studio</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <div><label for="title">Caption / title</label><input id="title" type="text" maxlength="2200" placeholder="Write your caption and hashtags"><div class="muted">Nothing is inserted automatically. Review this field before publishing.</div></div>
 
-  <footer>
-    <div class="wrap foot">
-      <span>© 2026 Penguin Music Studio. All rights reserved.</span>
-      <div class="footlinks"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
-    </div>
-  </footer>
+  <div><label for="privacy">Who can view this post?</label><select id="privacy"><option value="" selected disabled>Select a privacy setting</option></select><div class="muted">Available options are loaded directly from the connected TikTok account. No privacy option is preselected.</div></div>
+
+  <fieldset><legend>Interaction settings</legend><div class="checks"><label class="check"><input id="allowComment" type="checkbox"> Allow comments</label><label class="check"><input id="allowDuet" type="checkbox"> Allow Duet</label><label class="check"><input id="allowStitch" type="checkbox"> Allow Stitch</label></div><div class="muted" style="margin-top:10px">Options start off and unavailable account settings remain disabled.</div></fieldset>
+
+  <fieldset><legend>Content disclosure</legend><label class="check"><input id="commercialToggle" type="checkbox"> This content promotes a brand, product, service, or my own business.</label><div id="commercialOptions" class="checks hidden"><label class="check"><input id="yourBrand" type="checkbox"> Your brand / own business</label><label class="check"><input id="brandedContent" type="checkbox"> Third-party branded content / paid partnership</label></div></fieldset>
+
+  <fieldset><legend>AI-generated content</legend><label class="check"><input id="isAigc" type="checkbox"> Label this video as AI-generated content.</label></fieldset>
+
+  <fieldset><legend>Confirmations</legend><div class="checks"><label class="check"><input id="rightsConfirmed" type="checkbox"> I confirm that I have the rights and permission to publish this content.</label><label class="check"><input id="consentConfirmed" type="checkbox"> I confirm the posting request and agree to TikTok's Music Usage Confirmation.</label></div></fieldset>
+
+  <div class="notice">TikTok may take time to process a post. Public Direct Post is available only when TikTok permits it for the connected account and approved API client.</div>
+  <button id="publishBtn" type="button" disabled>Publish to TikTok</button>
+  <div id="status" class="status"></div>
+  <div class="legal"><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="/">Penguin Music Studio</a></div>
+</section>
+
+<section class="card stack"><div><strong>Video preview</strong><p class="muted">The exact local file selected above is shown here before the upload begins.</p></div><video id="preview" controls playsinline></video></section>
+</div>
+</div>
+
+<script>
+(()=>{"use strict";
+const API="https://penguin-tiktok-oauth-bridge.osama-alsaraqbi.workers.dev";
+const $=id=>document.getElementById(id);
+const e={connectBtn:$("connectBtn"),logoutBtn:$("logoutBtn"),accountBox:$("accountBox"),avatar:$("avatar"),nickname:$("nickname"),username:$("username"),videoFile:$("videoFile"),videoFacts:$("videoFacts"),title:$("title"),privacy:$("privacy"),allowComment:$("allowComment"),allowDuet:$("allowDuet"),allowStitch:$("allowStitch"),commercialToggle:$("commercialToggle"),commercialOptions:$("commercialOptions"),yourBrand:$("yourBrand"),brandedContent:$("brandedContent"),isAigc:$("isAigc"),rightsConfirmed:$("rightsConfirmed"),consentConfirmed:$("consentConfirmed"),publishBtn:$("publishBtn"),status:$("status"),preview:$("preview")};
+let token=sessionStorage.getItem("penguin_tiktok_session")||"",creator=null,file=null,duration=0,previewUrl="";
+function capture(){const p=new URLSearchParams(location.hash.replace(/^#/,"")),t=p.get("tiktok_session");if(t){token=t;sessionStorage.setItem("penguin_tiktok_session",t);history.replaceState(null,"",location.pathname+location.search)}}
+function status(msg,type=""){e.status.textContent=msg||"";e.status.className=`status ${type}`.trim()}
+async function api(path,opt={}){if(!token)throw new Error("TikTok is not connected.");const h=new Headers(opt.headers||{});h.set("Authorization",`Bearer ${token}`);if(opt.body&&!h.has("Content-Type"))h.set("Content-Type","application/json");const r=await fetch(API+path,{...opt,headers:h});let d={};try{d=await r.json()}catch{}if(!r.ok||d.ok===false)throw new Error(d?.tiktokError?.error_message||d?.tiktokError?.error_code||d?.error||`HTTP ${r.status}`);return d}
+function ready(){e.publishBtn.disabled=!(token&&creator&&file&&duration>0&&e.privacy.value&&e.rightsConfirmed.checked&&e.consentConfirmed.checked&&!(e.commercialToggle.checked&&!e.yourBrand.checked&&!e.brandedContent.checked)&&!(e.brandedContent.checked&&e.privacy.value==="SELF_ONLY"))}
+function render(c){creator=c;e.nickname.textContent=c.nickname||"TikTok creator";e.username.textContent=c.username?`@${c.username}`:"";if(c.avatarUrl){e.avatar.src=c.avatarUrl;e.avatar.alt=c.nickname||"TikTok avatar"}e.accountBox.classList.remove("hidden");e.connectBtn.classList.add("hidden");e.logoutBtn.classList.remove("hidden");e.privacy.innerHTML='<option value="" selected disabled>Select a privacy setting</option>';for(const v of c.privacyLevelOptions||[]){const o=document.createElement("option");o.value=v;o.textContent=v.replaceAll("_"," ").toLowerCase().replace(/\b\w/g,x=>x.toUpperCase());e.privacy.appendChild(o)}e.allowComment.disabled=!!c.commentDisabled;e.allowDuet.disabled=!!c.duetDisabled;e.allowStitch.disabled=!!c.stitchDisabled;if(e.allowComment.disabled)e.allowComment.checked=false;if(e.allowDuet.disabled)e.allowDuet.checked=false;if(e.allowStitch.disabled)e.allowStitch.checked=false;ready()}
+async function loadCreator(){if(!token)return;status("Loading TikTok creator information…");try{const d=await api("/api/tiktok/creator-info");render(d.creator);status("TikTok account connected.","ok")}catch(err){sessionStorage.removeItem("penguin_tiktok_session");token="";status(`Connection error: ${err.message}`,"error")}}
+function metadata(f){return new Promise((resolve,reject)=>{if(previewUrl)URL.revokeObjectURL(previewUrl);previewUrl=URL.createObjectURL(f);e.preview.src=previewUrl;const ok=()=>{clean();resolve(e.preview.duration)},bad=()=>{clean();reject(new Error("The browser could not read this video."))},clean=()=>{e.preview.removeEventListener("loadedmetadata",ok);e.preview.removeEventListener("error",bad)};e.preview.addEventListener("loadedmetadata",ok);e.preview.addEventListener("error",bad);e.preview.load()})}
+async function chooseFile(){file=e.videoFile.files?.[0]||null;duration=0;e.videoFacts.textContent="";if(!file){ready();return}try{duration=await metadata(file);if(Number.isFinite(creator?.maxVideoPostDurationSec)&&duration>creator.maxVideoPostDurationSec)throw new Error(`Video exceeds this account's ${creator.maxVideoPostDurationSec}s duration limit.`);e.videoFacts.textContent=`${file.name} • ${(file.size/1024/1024).toFixed(2)} MB • ${duration.toFixed(1)} sec`;status("Video loaded. Review every setting before publishing.")}catch(err){file=null;status(err.message,"error")}ready()}
+function commercial(){const on=e.commercialToggle.checked;e.commercialOptions.classList.toggle("hidden",!on);if(!on){e.yourBrand.checked=false;e.brandedContent.checked=false}if(e.brandedContent.checked&&e.privacy.value==="SELF_ONLY")status("Branded content cannot use the Only Me privacy setting.","error");else status("");ready()}
+async function upload(f,url,plan){const size=plan.chunkSize,count=plan.totalChunkCount;for(let i=0;i<count;i++){const first=i*size,end=i===count-1?f.size:Math.min(first+size,f.size),last=end-1,chunk=f.slice(first,end);status(`Uploading video… ${i+1}/${count}`);const r=await fetch(url,{method:"PUT",headers:{"Content-Type":f.type||"video/mp4","Content-Range":`bytes ${first}-${last}/${f.size}`},body:chunk});if(![200,201,206].includes(r.status))throw new Error(`TikTok upload failed with HTTP ${r.status}.`)}}
+async function poll(id){for(let i=0;i<60;i++){const d=await api("/api/tiktok/post-status",{method:"POST",body:JSON.stringify({publishId:id})});if(d.status==="PUBLISH_COMPLETE")return d;if(d.status==="FAILED")throw new Error(d.failReason||"TikTok processing failed.");status(`TikTok processing: ${d.status||"pending"}`);await new Promise(r=>setTimeout(r,3000))}throw new Error("TikTok is still processing the post. Check again later.")}
+async function publish(){if(e.publishBtn.disabled)return;e.publishBtn.disabled=true;try{status("Refreshing creator settings and initializing the post…");const payload={consentConfirmed:e.consentConfirmed.checked,rightsConfirmed:e.rightsConfirmed.checked,title:e.title.value,privacyLevel:e.privacy.value,allowComment:e.allowComment.checked,allowDuet:e.allowDuet.checked,allowStitch:e.allowStitch.checked,commercialContent:e.commercialToggle.checked,yourBrand:e.yourBrand.checked,brandedContent:e.brandedContent.checked,isAigc:e.isAigc.checked,video:{sizeBytes:file.size,durationSec:duration,mimeType:file.type||"video/mp4"}};const init=await api("/api/tiktok/direct-post/init",{method:"POST",body:JSON.stringify(payload)});await upload(file,init.uploadUrl,init.uploadPlan);status("Upload complete. TikTok is processing the post…");const done=await poll(init.publishId),ids=done.publiclyAvailablePostIds||[];status(ids.length?`Published successfully. TikTok post ID: ${ids.join(", ")}`:"Publishing completed successfully.","ok")}catch(err){status(`Publish failed: ${err.message}`,"error")}finally{ready()}}
+async function logout(){try{if(token)await api("/api/tiktok/logout",{method:"POST"})}catch{}sessionStorage.removeItem("penguin_tiktok_session");location.reload()}
+capture();e.videoFile.addEventListener("change",chooseFile);for(const x of [e.privacy,e.allowComment,e.allowDuet,e.allowStitch,e.yourBrand,e.brandedContent,e.isAigc,e.rightsConfirmed,e.consentConfirmed])x.addEventListener("change",()=>{commercial();ready()});e.commercialToggle.addEventListener("change",commercial);e.publishBtn.addEventListener("click",publish);e.logoutBtn.addEventListener("click",logout);if(token)loadCreator();else status("Connect a TikTok account to begin.");
+})();
+</script>
 </body>
 </html>
