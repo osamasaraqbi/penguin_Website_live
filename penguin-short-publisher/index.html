@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penguin Short Publisher — Penguin Music Studio</title>
+  <meta name="description" content="Penguin Short Publisher is Penguin Music Studio's internal tool for securely connecting TikTok and publishing original short-form music videos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/penguin_site_assets/penguin-logo.png" />
+  <style>
+    :root{color-scheme:dark;--bg:#040505;--panel:#111213;--line:rgba(255,255,255,.10);--gold:#ffc451;--green:#72e5a8;--text:#fbf4df;--muted:#b8bec4;--max:980px}
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(circle at 18% 0%,rgba(255,196,81,.10),transparent 28%),linear-gradient(180deg,#080907,#030404 55%,#070604);color:var(--text);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 36px),var(--max));margin:0 auto}.nav{height:76px;border-bottom:1px solid rgba(255,196,81,.14);display:flex;align-items:center;background:rgba(6,7,7,.92);backdrop-filter:blur(16px);position:sticky;top:0;z-index:10}.navin{display:flex;align-items:center;gap:12px}.logo{width:40px;height:46px;object-fit:contain}.brand{font-family:Sora,sans-serif;font-weight:800}.brand small{display:block;margin-top:3px;color:#ead083;font:700 9px/1 Inter;letter-spacing:.14em;text-transform:uppercase}.hero{padding:92px 0 44px}.kicker{display:inline-flex;padding:8px 12px;border:1px solid rgba(255,196,81,.22);border-radius:999px;color:#ead083;font-size:12px;font-weight:800;background:rgba(255,196,81,.06)}h1{font-family:Sora,sans-serif;font-size:clamp(42px,7vw,72px);line-height:.98;letter-spacing:-.05em;margin:18px 0}.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0}.card{border:1px solid var(--line);border-radius:18px;padding:22px;background:linear-gradient(180deg,rgba(24,25,26,.88),rgba(10,11,12,.92));box-shadow:0 24px 60px rgba(0,0,0,.24)}.num{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(114,229,168,.08);border:1px solid rgba(114,229,168,.20);color:var(--green);font-weight:800}.card h2{font:700 17px Sora,sans-serif;margin:16px 0 8px}.card p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}.section{padding:28px 0 72px}.notice{border:1px solid rgba(255,196,81,.16);background:rgba(255,196,81,.045);border-radius:18px;padding:24px;line-height:1.7;color:var(--muted)}.notice strong{color:var(--text)}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;min-height:44px;align-items:center;padding:0 16px;border-radius:12px;border:1px solid var(--line);background:#111214;font-weight:700}.btn.primary{background:linear-gradient(145deg,#f0cf64,#b99032);color:#080704;border-color:rgba(255,224,130,.38)}footer{border-top:1px solid var(--line);padding:26px 0 40px;color:#89919a;font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footlinks{display:flex;gap:18px}@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding-top:66px}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap navin">
+      <img class="logo" src="/penguin_site_assets/penguin-logo.png" alt="Penguin Studio logo" />
+      <div class="brand">Penguin Music Studio<small>Penguin Short Publisher</small></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">Internal publishing tool</span>
+        <h1>Penguin Short Publisher</h1>
+        <p class="lead">A secure internal web tool used by Penguin Music Studio to connect an authorized TikTok account and publish original short-form music videos through TikTok's official developer APIs.</p>
+
+        <div class="grid">
+          <article class="card"><div class="num">01</div><h2>Connect</h2><p>Authorized studio operators connect TikTok using TikTok's OAuth authorization flow. TikTok passwords are never collected by Penguin Short Publisher.</p></article>
+          <article class="card"><div class="num">02</div><h2>Prepare</h2><p>The studio reviews the original video, caption, privacy settings, and publishing metadata before a post is submitted.</p></article>
+          <article class="card"><div class="num">03</div><h2>Publish</h2><p>The tool submits approved short-form content to TikTok using the Content Posting API and records publishing status for studio operations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="notice"><strong>Access is restricted.</strong> Penguin Short Publisher is not a public consumer application. It is an internal publishing workflow for Penguin Music Studio and is intended only for authorized studio operators and TikTok accounts they are permitted to manage.</div>
+        <div class="links">
+          <a class="btn primary" href="/privacy/">Privacy Policy</a>
+          <a class="btn" href="/terms/">Terms of Service</a>
+          <a class="btn" href="/">Penguin Studio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© 2026 Penguin Music Studio. All rights reserved.</span>
+      <div class="footlinks"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+    </div>
+  </footer>
+</body>
+</html>
