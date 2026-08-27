@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090b0f">
+  <title>Golf Mk6 GTI V12</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;background:#090b0f;color:#dce3ea;font-family:system-ui,-apple-system,sans-serif}
+    body{display:grid;place-items:center;overflow:hidden}
+    #boot{font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;text-align:center;padding:24px}
+    #err{color:#ff8a8a;white-space:pre-wrap;max-width:90vw;line-height:1.45}
+  </style>
+</head>
+<body>
+  <div id="boot">Loading Golf Mk6 GTI V12…</div>
+  <script>
+    (async()=>{
+      const boot=document.getElementById('boot');
+      try{
+        if(typeof DecompressionStream==='undefined') throw new Error('This Safari version does not support DecompressionStream.');
+        const b64=(await (await fetch('./payload.b64',{cache:'no-store'})).text()).trim();
+        const bin=atob(b64);
+        const bytes=new Uint8Array(bin.length);
+        for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+        const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+        const html=await new Response(stream).text();
+        document.open();
+        document.write(html);
+        document.close();
+      }catch(err){
+        boot.id='err';
+        boot.textContent='LOAD ERROR\n'+(err&&err.message?err.message:String(err));
+      }
+    })();
+  </script>
+</body>
+</html>
